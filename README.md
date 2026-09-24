@@ -1,17 +1,17 @@
-# Seguimiento de pedidos
+# Order Tracking
 
-Aplicación Flutter conectada a Cloud Firestore para administrar pedidos o
-entregas. Permite crear registros, consultar cambios en tiempo real, actualizar
-su estado (`Recibido`, `En camino` o `Entregado`) y eliminarlos después de una
-confirmación.
+A Flutter application connected to Cloud Firestore for managing orders and
+deliveries. It allows users to create records, view real-time changes, update
+their status (`Received`, `In transit`, or `Delivered`), and delete them after
+confirmation.
 
-Las operaciones de Firestore están centralizadas en
-[lib/services/firestore_service.dart](lib/services/firestore_service.dart), y
-la colección utilizada es `pedidos`.
+Firestore operations are centralized in
+[lib/services/firestore_service.dart](lib/services/firestore_service.dart),
+and the collection used is `pedidos`.
 
-La configuración de Firebase se mantiene local y está excluida de Git para no
-publicar identificadores del proyecto ni claves de cliente. Para ejecutar la
-aplicación, agrega tus propios archivos de configuración de Firebase y usa:
+Firebase configuration is kept local and excluded from Git to avoid publishing
+project identifiers or client keys. To run the application, add your own
+Firebase configuration files and use:
 
 ```powershell
 flutter pub get
